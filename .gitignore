@@ -1,0 +1,4 @@
+certificates/
+*.txt
+*copy*
+analyze_txt
