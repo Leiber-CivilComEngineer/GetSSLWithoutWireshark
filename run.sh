@@ -8,5 +8,5 @@ fi
 g++ getSSL.cpp -o getSSL -lpcap 
 ./getSSL $1 > 1.txt
 
-g++ -std=c++17 analyze_txt.cpp -o analyze_txt
+g++ -std=c++17 analyze_txt.cpp -o analyze_txt -lstdc++fs
 ./analyze_txt
