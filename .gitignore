@@ -1,5 +1,5 @@
-certificates/
-*.txt
-*copy*
-analyze_txt
-getSSL
+# certificates/
+# *.txt
+# *copy*
+# analyze_txt
+# getSSL
