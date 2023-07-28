@@ -9,7 +9,7 @@ This is a C++ program designed to extract SSL certificates from pcap files. This
 Use the run.sh bash script to run this program. You are welcomed to change "SSL.pcapng" to the file you want to parse
 
 ```bash
-g++ getPEM.cpp -o getPEM -std=c++17 -lpcap -lssl -lcrypto
+g++ getPEM.cpp -o getPEM -std=c++17 -lpcap -lssl -lcrypto -lstdc++fs
 ./getPEM SSL.pcapng
 ```
 
