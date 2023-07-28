@@ -1,6 +1,6 @@
 # Get SSL Without Wiresharks🦈🦈🦈
 
-This is a C++ program designed to extract SSL certificates from pcap files. This program first uses libpcap to parse the TLS part from a pcap file, extracting the hexadecimal byte stream. Then, it performs manual parsing to locate the SSL certificate section. If the SSL certificate data is scattered across multiple TLS communications, it needs to concatenate them together to reconstruct the complete SSL byte stream data. After that, each SSL byte stream is converted from hexadecimal to binary, and then saved as SSL der files.
+This is a C++ program designed to extract SSL certificates from pcap files. This program first uses libpcap to parse the TLS part from a pcap file, extracting the hexadecimal byte stream. Then, it performs manual parsing to locate the SSL certificate section. If the SSL certificate data is scattered across multiple TLS communications, it needs to concatenate them together to reconstruct the complete SSL byte stream data. After that, each SSL byte stream is converted from hexadecimal to binary, and then saved as PEM files.
 
 
 
@@ -9,7 +9,8 @@ This is a C++ program designed to extract SSL certificates from pcap files. This
 Use the run.sh bash script to run this program. You are welcomed to change "SSL.pcapng" to the file you want to parse
 
 ```bash
-sudo sh run.sh SSL.pcapng
+g++ getPEM.cpp -o getPEM -std=c++17 -lpcap -lssl -lcrypto
+./getPEM SSL.pcapng
 ```
 
 

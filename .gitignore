@@ -3,3 +3,7 @@
 # *copy*
 # analyze_txt
 # getSSL
+.vscode
+getSSL*
+analyze_txt*
+run.sh
